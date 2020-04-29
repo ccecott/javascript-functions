@@ -55,3 +55,36 @@ function fight(player1, player2, player1Health, player2Health) {
     }
 }
 fight("Cass", "Ben", 100, 100);
+
+
+
+
+
+
+//extra work
+
+function makeSquare(width) {
+    let line = "";
+
+    for (let i = 0; i <= width; i++) {
+        for (let j = 0; j <= width; j++) {
+            line += "*";
+        }
+        line += "\n";
+    }
+    return line;
+}
+console.log(makeSquare(6));
+
+function makeTriangle(length) {
+    let line = "";
+    for (let i = 0; i <= length; i++) {
+        for (let j = 0; j <= i; j++) {
+            line += "*";
+
+        }
+        line += "\n";
+    }
+    return line;
+}
+console.log(makeTriangle(5));
